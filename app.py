@@ -1,7 +1,7 @@
 import streamlit as st
 import time
 
-st.set_page_config(page_title="Happy Birthday!", page_icon="✨")
+st.set_page_config(page_title="Birthday Special", page_icon="✨")
 
 st.markdown("""
     <style>
@@ -23,12 +23,14 @@ st.markdown("---")
 if st.button('Doğum Günü Kızı Buraya Tıkla 🎁'):
     st.balloons()
     st.snow()
-    # TASARIM 3: GRADIENT GLOW
+    # TASARIM 4: BOLD STATEMENT
     st.markdown("""
-        <div style="padding: 40px 0; text-align: center;">
-            <h1 style="background: linear-gradient(to right, #FFD700, #FFFFFF, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 46px; font-weight: 900; line-height: 1.2; text-shadow: 0px 10px 30px rgba(0,0,0,0.4);">
-                HAYATININ GERİ KALANINDA<br>SAĞLIKLI VE HUZURLU<br>GEÇİRMEN DİLEĞİYLE
-            </h1>
+        <div style="background-color: #000000; padding: 45px 10px; transform: skewY(-1deg); margin: 30px 0; border-left: 15px solid #FFD700; border-right: 15px solid #FFD700;">
+            <div style="transform: skewY(1deg);">
+                <h2 style="color: #FFFFFF; text-align: center; font-weight: 900; font-size: 32px; text-transform: uppercase; letter-spacing: 3px; margin: 0;">
+                    HAYATININ GERİ KALANINDA SAĞLIKLI VE HUZURLU GEÇİRMEN DİLEĞİYLE
+                </h2>
+            </div>
         </div>
         """, unsafe_allow_html=True)
     with st.spinner(''): time.sleep(9)
