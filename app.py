@@ -1,7 +1,7 @@
 import streamlit as st
 import time
 
-st.set_page_config(page_title="Birthday Special", page_icon="✨")
+st.set_page_config(page_title="Neon Birthday", page_icon="✨")
 
 st.markdown("""
     <style>
@@ -23,14 +23,12 @@ st.markdown("---")
 if st.button('Doğum Günü Kızı Buraya Tıkla 🎁'):
     st.balloons()
     st.snow()
-    # TASARIM 4: BOLD STATEMENT
+    # TASARIM 5: NEON PULSING
     st.markdown("""
-        <div style="background-color: #000000; padding: 45px 10px; transform: skewY(-1deg); margin: 30px 0; border-left: 15px solid #FFD700; border-right: 15px solid #FFD700;">
-            <div style="transform: skewY(1deg);">
-                <h2 style="color: #FFFFFF; text-align: center; font-weight: 900; font-size: 32px; text-transform: uppercase; letter-spacing: 3px; margin: 0;">
-                    HAYATININ GERİ KALANINDA SAĞLIKLI VE HUZURLU GEÇİRMEN DİLEĞİYLE
-                </h2>
-            </div>
+        <div style="text-align: center; padding: 55px 10px;">
+            <h2 style="color: #FFFFFF; font-size: 38px; font-weight: 800; text-shadow: 0 0 10px #FFF, 0 0 25px #FF4B4B, 0 0 45px #FF4B4B; line-height: 1.6; font-style: italic;">
+                "Hayatının geri kalanında sağlıklı ve huzurlu geçirmen dileğiyle..."
+            </h2>
         </div>
         """, unsafe_allow_html=True)
     with st.spinner(''): time.sleep(9)
