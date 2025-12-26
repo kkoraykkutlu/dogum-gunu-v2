@@ -33,12 +33,13 @@ if st.button('DEVAMI İÇİN BURAYA TIKLA🤪'):
         """, unsafe_allow_html=True)
     with st.spinner(''): time.sleep(5)
     st.success("## ✨ 2026 VE GÖRECEĞİMİZ YENİ YILLARDA HER ŞEY GÖNLÜMÜZCE OLSUN!✨")
-    st.info("Canım kardeşim benim, bu sürprizi sana özel hazıraladım. Sen benim hayatımdaki en ÖZEL insanlardansın.İYİ Kİ DOĞDUN,İYİ Kİ VARSIN!😍")
+    st.info("Canım kardeşim benim, bu sürprizi sana özel hazıraladım. Sen benim hayatımdaki en ÖZEL insanlardansın.İYİ Kİ DOĞDUN,İYİ Kİ VARSIN😍")
     st.markdown("<h3 class='gold-text'>✨ Bu yıl beraber yapacaklarımız:</h3>", unsafe_allow_html=True)
     st.markdown("<div class='liste-maddesi'>☕ Daha çok kahve içeceğiz</div>", unsafe_allow_html=True)
     st.markdown("<div class='liste-maddesi'>🌈 Daha güzel zamanlarımız olacak</div>", unsafe_allow_html=True)
     st.markdown("<div class='liste-maddesi'>🍀 Daha sağlıklı ve huzurlu günlerimiz olacak</div>", unsafe_allow_html=True)
     st.markdown("<div class='liste-maddesi'>😁 Daha çok güleceğiz.</div>", unsafe_allow_html=True)
+
 
 
 
