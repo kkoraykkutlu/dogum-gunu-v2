@@ -1,7 +1,7 @@
 import streamlit as st
 import time
 
-st.set_page_config(page_title="Mutlu Yıllar!", page_icon="✨")
+st.set_page_config(page_title="Happy Birthday!", page_icon="✨")
 
 st.markdown("""
     <style>
@@ -23,15 +23,19 @@ st.markdown("---")
 if st.button('Doğum Günü Kızı Buraya Tıkla 🎁'):
     st.balloons()
     st.snow()
-    # TASARIM 2: GLASSMORPHISM
+    # TASARIM 3: GRADIENT GLOW
     st.markdown("""
-        <div style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(15px); padding: 50px 15px; border-radius: 30px; border: 2px solid rgba(255,255,255,0.4); box-shadow: 0 15px 35px rgba(0,0,0,0.5); margin: 30px 0;">
-            <p style="color: white; font-size: 34px; font-weight: 900; text-align: center; margin: 0; line-height: 1.4; text-transform: uppercase; letter-spacing: 2px;">
-                HAYATININ GERİ KALANINDA<br><span style="color: #FFD700;">SAĞLIKLI VE HUZURLU</span><br>GEÇİRMEN DİLEĞİYLE
-            </p>
+        <div style="padding: 40px 0; text-align: center;">
+            <h1 style="background: linear-gradient(to right, #FFD700, #FFFFFF, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 46px; font-weight: 900; line-height: 1.2; text-shadow: 0px 10px 30px rgba(0,0,0,0.4);">
+                HAYATININ GERİ KALANINDA<br>SAĞLIKLI VE HUZURLU<br>GEÇİRMEN DİLEĞİYLE
+            </h1>
         </div>
         """, unsafe_allow_html=True)
     with st.spinner(''): time.sleep(9)
     st.success("## ✨ 2026 VE GÖRECEĞİMİZ YENİ YILLAR DİLEDİĞİMİZ ŞEKİLDE OLSUN! ✨")
     st.info("Canım kardeşim benim, bu satırları sana özel Python koduyla ve yapay zeka desteğiyle yazmak istedim. Sen benim hayatımdaki en ÖZEL insanlardansın. İYİ Kİ DOĞDUN, İYİ Kİ VARSIN!")
-    st.markdown("<h3 class='gold-text'>✨ Bu yıl
+    st.markdown("<h3 class='gold-text'>✨ Bu yıl beraber yapacaklarımız:</h3>", unsafe_allow_html=True)
+    st.markdown("<div class='liste-maddesi'>☕ Daha çok kahve içeceğiz</div>", unsafe_allow_html=True)
+    st.markdown("<div class='liste-maddesi'>🌈 Daha güzel zamanlarımız olacak</div>", unsafe_allow_html=True)
+    st.markdown("<div class='liste-maddesi'>🍀 Daha sağlıklı ve huzurlu günlerimiz olacak</div>", unsafe_allow_html=True)
+    st.markdown("<div class='liste-maddesi'>😁 Daha çok güleceğiz.</div>", unsafe_allow_html=True)
