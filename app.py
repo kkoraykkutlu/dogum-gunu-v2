@@ -4,7 +4,7 @@ import time
 # 1. Sayfa Ayarları
 st.set_page_config(page_title="İyi ki Doğdun Can Dost İyi ki Varsın !", page_icon="✨")
 
-# 2. Mor Arka Plan ve Okunaklı Yazı Stilleri (CSS)
+# 2. Tasarım ve Stil Ayarları (CSS)
 st.markdown("""
     <style>
     /* Arka Plan: Koyu Mordan Açık Mora Geçiş */
@@ -12,7 +12,7 @@ st.markdown("""
         background: linear-gradient(to bottom, #4b0082, #8a2be2);
     }
     
-    /* Genel Yazılar (Beyaz) */
+    /* Genel Yazılar */
     h1, h3, [data-testid="stMarkdownContainer"] p {
         text-align: center;
         color: #FFFFFF !important;
@@ -25,6 +25,15 @@ st.markdown("""
         font-weight: bold;
     }
     
+    /* Resim Tasarımı: Köşeleri yuvarlatılmış ve çerçeveli */
+    .stImage > img {
+        border-radius: 20px;
+        border: 3px solid #FFD700;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     /* BUTON TASARIMI */
     div.stButton > button {
         display: block;
@@ -35,38 +44,40 @@ st.markdown("""
         padding: 10px 25px;
         border: none;
         font-size: 20px;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
     }
 
-    /* LİSTE MADDELERİ: Siyah, Kalın ve Belirgin */
+    /* LİSTE MADDELERİ: Siyah ve Belirgin */
     .liste-maddesi {
-        background-color: rgba(255, 255, 255, 0.8); /* Yazının arkasına beyaz zemin */
-        color: #000000 !important; /* Tam Siyah yazı */
+        background-color: rgba(255, 255, 255, 0.85);
+        color: #000000 !important;
         padding: 12px;
         border-radius: 15px;
         margin: 10px auto;
         width: 85%;
         font-weight: bold;
         text-align: center;
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
     }
     </style>
     """, unsafe_allow_html=True)
 
-# 3. İçerik ve Buton Fonksiyonu
-def kutla():
-    st.balloons()
-    st.snow()
-
+# 3. İçerik Akışı
 st.markdown("<h1 class='gold-text'>🎂 İyi ki Doğdun Canım Benim! 🎂</h1>", unsafe_allow_html=True)
+
+# FOTOĞRAF EKLEME (Senin gönderdiğin linkin doğrudan hali)
+st.image("https://i.ibb.co/5hfXGNsS/f66f918e7e0e.jpg", caption="İyi ki varsın! ✨", use_container_width=True)
+
 st.markdown("### BUGÜN 29 ARALIK EN DEĞERLİ GÜNLERİMİZDEN ÇÜNKÜ SEN DOĞDUN, İYİ Kİ SENİ TANIMIŞIM.")
 
 st.markdown("---")
 
+# Buton ve Kutlama Fonksiyonu
 if st.button('Doğum Günü Kızı Buraya Tıkla 🎁'):
-    kutla()
+    st.balloons()
+    st.snow()
     
     with st.spinner('HAYATININ GERİ KALANINDA SAĞLIKLI VE HUZURLU GEÇİRMEN DİLEĞİYLE'):
-        time.sleep(5) # 9 saniye iPhone'da çok uzun gelebilir, 5'e çektim ama istersen 9 yapabilirsin.
+        time.sleep(5)
     
     st.success("## ✨ 2026 VE GÖRECEĞİMİZ YENİ YILLAR DİLEDİĞİMİZ ŞEKİLDE OLSUN! ✨")
     
@@ -78,7 +89,6 @@ if st.button('Doğum Günü Kızı Buraya Tıkla 🎁'):
     
     st.markdown("<h3 class='gold-text'>✨ Bu yıl beraber yapacaklarımız:</h3>", unsafe_allow_html=True)
     
-    # Siyah ve net görünen listemiz
     st.markdown("<div class='liste-maddesi'>☕ Daha çok kahve içeceğiz</div>", unsafe_allow_html=True)
     st.markdown("<div class='liste-maddesi'>🌈 Daha güzel zamanlarımız olacak</div>", unsafe_allow_html=True)
     st.markdown("<div class='liste-maddesi'>🍀 Daha sağlıklı ve huzurlu günlerimiz olacak</div>", unsafe_allow_html=True)
