@@ -17,10 +17,10 @@ st.markdown("""
 st.markdown("<h1 class='gold-text'>🎂 İyi ki Doğdun Canım Benim! 🎂</h1>", unsafe_allow_html=True)
 try: st.image("foto.jpeg", use_container_width=True)
 except: st.error("Fotoğraf bulunamadı!")
-st.markdown("### BUGÜN 29 ARALIK EN DEĞERLİ GÜNLERİMİZDEN ÇÜNKÜ SEN DOĞDUN, İYİ Kİ SENİ TANIMIŞIM.")
+st.markdown("### BUGÜN 29 ARALIK EN DEĞERLİ GÜNLERİMİZDEN ÇÜNKÜ SEN DOĞDUN, İYİ Kİ SENİ TANIMIŞIM🫶🏽")
 st.markdown("---")
 
-if st.button('Doğum Günü Kızı Buraya Tıkla 🎁'):
+if st.button('DEVAMI İÇİN BURAYA TIKLA🤪'):
     st.balloons()
     st.snow()
     # TASARIM 5: NEON PULSING
@@ -31,12 +31,13 @@ if st.button('Doğum Günü Kızı Buraya Tıkla 🎁'):
             </h2>
         </div>
         """, unsafe_allow_html=True)
-    with st.spinner(''): time.sleep(9)
-    st.success("## ✨ 2026 VE GÖRECEĞİMİZ YENİ YILLAR DİLEDİĞİMİZ ŞEKİLDE OLSUN! ✨")
+    with st.spinner(''): time.sleep(5)
+    st.success("## ✨ 2026 VE GÖRECEĞİMİZ YENİ YILLARDA HER ŞEY GÖNLÜMÜZCE OLSUN! ✨")
     st.info("Canım kardeşim benim, bu sürprizi sana özel Python koduyla ve yapay zeka desteğiyle hazıraldım. Sen benim hayatımdaki en ÖZEL insanlardansın. İYİ Kİ DOĞDUN, İYİ Kİ VARSIN!")
     st.markdown("<h3 class='gold-text'>✨ Bu yıl beraber yapacaklarımız:</h3>", unsafe_allow_html=True)
     st.markdown("<div class='liste-maddesi'>☕ Daha çok kahve içeceğiz</div>", unsafe_allow_html=True)
     st.markdown("<div class='liste-maddesi'>🌈 Daha güzel zamanlarımız olacak</div>", unsafe_allow_html=True)
     st.markdown("<div class='liste-maddesi'>🍀 Daha sağlıklı ve huzurlu günlerimiz olacak</div>", unsafe_allow_html=True)
     st.markdown("<div class='liste-maddesi'>😁 Daha çok güleceğiz.</div>", unsafe_allow_html=True)
+
 
