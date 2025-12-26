@@ -27,18 +27,19 @@ if st.button('DEVAMI İÇİN BURAYA TIKLA🤪'):
     st.markdown("""
         <div style="text-align: center; padding: 55px 10px;">
             <h2 style="color: #FFFFFF; font-size: 38px; font-weight: 800; text-shadow: 0 0 10px #FFF, 0 0 25px #FF4B4B, 0 0 45px #FF4B4B; line-height: 1.6; font-style: italic;">
-                "Hayatının geri kalanında sağlıklı ve huzurlu geçirmen dileğiyle..."
+                "Hayatının geri kalanında sağlıklı ve huzurlu geçirmen dileğiyle✨💫🤩"
             </h2>
         </div>
         """, unsafe_allow_html=True)
     with st.spinner(''): time.sleep(5)
     st.success("## ✨ 2026 VE GÖRECEĞİMİZ YENİ YILLARDA HER ŞEY GÖNLÜMÜZCE OLSUN!✨")
-    st.info("Canım kardeşim benim, bu sürprizi sana özel Python koduyla ve yapay zeka desteğiyle hazıraldım. Sen benim hayatımdaki en ÖZEL insanlardansın. İYİ Kİ DOĞDUN, İYİ Kİ VARSIN!")
+    st.info("Canım kardeşim benim, bu sürprizi sana özel Python koduyla ve yapay zeka desteğiyle hazıraladım. Sen benim hayatımdaki en ÖZEL insanlardansın.İYİ Kİ DOĞDUN,İYİ Kİ VARSIN!")
     st.markdown("<h3 class='gold-text'>✨ Bu yıl beraber yapacaklarımız:</h3>", unsafe_allow_html=True)
     st.markdown("<div class='liste-maddesi'>☕ Daha çok kahve içeceğiz</div>", unsafe_allow_html=True)
     st.markdown("<div class='liste-maddesi'>🌈 Daha güzel zamanlarımız olacak</div>", unsafe_allow_html=True)
     st.markdown("<div class='liste-maddesi'>🍀 Daha sağlıklı ve huzurlu günlerimiz olacak</div>", unsafe_allow_html=True)
     st.markdown("<div class='liste-maddesi'>😁 Daha çok güleceğiz.</div>", unsafe_allow_html=True)
+
 
 
 
